@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <title>Gestion Paie</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Bienvenue dans la gestion de paie</h1>
+        <nav>
+            <a href="{% url 'home' %}">Accueil</a>
+            <!-- autres liens -->
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        <!-- contenu spécifique des pages -->
+        {% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2024 Mon Entreprise</p>
+    </footer>
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
